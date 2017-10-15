@@ -1,0 +1,35 @@
+\pagenumbering{gobble}
+
+\vspace*{-12cm}
+\includegraphics[width=2in, height=1in]{./Pic/Logo.png} \hfill \includegraphics[width=3.4in, height=2.5in]{./Pic/uhb_logo.png}
+\begin{center}
+\hfill \includegraphics[width=2in, height=1.5in]{./Pic/tidy.png}
+\vspace*{6cm}
+
+\large
+\textit{Andy Ness (Andy.Ness@bristol.ac.uk)}\\
+\textit{Jonathan Sandy (Jonathan.Sandy@bristol.ac.uk)}\\
+\textit{Osama Mahmoud}\\
+\textit{Andrea Waylen}\\
+\textit{Andrew Wills}\\
+
+\vspace*{0.40in}
+\normalsize
+
+\textbf{NIHR Bristol Biomedical Research Centre (Nutrition),\\
+Bristol Dental School,\\ University of Bristol}
+
+\vspace*{0.40in}
+\normalsize
+Centre reports were generated using the \textcopyright \ \href{https://github.com/Osmahmoud/CCUK-GenRep}{\color{blue} CCUK-GenRep} software
+
+developed by
+
+Osama Mahmoud (o.mahmoud@bristol.ac.uk)\\ \href{www.osmahmoud.com}{\color{blue} www.osmahmoud.com}
+
+\vspace*{0.1in}
+This report was generated on: `r format(Sys.time(), "%B %d, %Y")`
+\end{center}
+
+\newpage
+\pagenumbering{roman}

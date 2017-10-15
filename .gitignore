@@ -1,0 +1,14 @@
+#Data files
+*.RData
+
+#RMD section files
+Rmd/
+Rmd/Introduction.Rmd
+Rmd/Summary.Rmd
+
+#Outputs
+Outputs/
+
+
+#Legacy
+Legacy/

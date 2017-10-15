@@ -1,0 +1,10 @@
+{
+    "dialog-state" : {
+        "caseSensitive" : false,
+        "filePatterns" : [
+        ],
+        "path" : "O:/Github/CCUK-GenRep/Rmd",
+        "query" : "al2015structural",
+        "regex" : false
+    }
+}

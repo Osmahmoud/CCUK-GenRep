@@ -1,0 +1,14 @@
+Statistical models were fitted to data for modelling the centre-level variations. 'Generalized linear mixed models' and 'ordinary mixed models' were used for categorical and continous responses respectively. The estimated statistical form of a such model, for continous outcomes, can be expressed as follows:
+\begin{equation}
+\hat{y}_{ij}=\hat{\beta}_{0}+\hat{u}_{0j},
+\end{equation}
+where $\hat{y}_{ij}$ represents the estimated outcome for a child $i$ who is treated at a centre $j$ and $\hat{\beta}_{0}$ represents the overall average across centres. Whilst, $\hat{\beta}_{0}+\hat{u}_{0j}$ refers to the average of centre $j$ (i.e., the expected outcome for a child who was treated at centre $j$). In other words, $\hat{u}_{0j}$ is the estimated effect of the centre $j$ that is when $\hat{u}_{0j}$ greater than zero a child treated at the corresponding centre $j$ is expected to have a higher outcome than the overall average.
+
+On the other hand, the estimated generalized linear mixed model used for categorical outcomes can be expressed in the form as follows:
+\begin{equation}
+logit\,\left(\hat{\pi}_{ij}\right)=\hat{\beta}_{0}+\hat{u}_{0j},
+\end{equation}
+where $\hat{\pi}_{ij}$ represents probability of developing an outcome (e.g., a 'good' *facial appearance*) for a child $i$ who treated at a centre $j$. The logit of a probability refers to the log odds of that probability which can be shown as:
+$logit\,\left(\hat{\pi}_{ij}\right)=log\,\left(\frac{\hat{\pi}_{ij}}{1-\hat{\pi}_{ij}}\right)$.
+
+The estimation procedure that we used is based on maximizing the likelihood function using penalized iteratively re-weighted least squares. The log-likelihood is evaluated via an adaptive Gauss-Hermite approximation (a generalization version of Laplacian approximation when the number of points used for the approximation is greater than one).

@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "source(\"R/Rfuns.R\")\n# options(MLwiN_path=\"C:/Program Files/MLwiN v3.01/\")\nHubs = c(\"Cleft Net East\" = \"CAM\", \"Leeds\" = \"LEEDS\", \"Liverpool\" = \"LIV\", \"Manchester\" = \"MAN\", \"Midlands\" = \"MIDS\",\n         \"Northern Ireland\" = \"N.IRE\", \"North Thames\" = \"N.THAMES\", \"Newcastle\" = \"NEWC\", \"South Thames\" = \"S.THAMES\",\n         \"Scotland\" = \"SCOT\",  \"Spires\" = \"SPIRES\", \"South West\" = \"SWSW\", \"Trent\" = \"TRENT\")\n\n#Hubs = c(\"Manchester\" = \"MAN\", \"Newcastle\" = \"NEWC\")\n# Hubs = c(\"Cleft Net East\" = \"CAM\")\n# Hubs = c(\"South West\" = \"SWSW\")\n\nfor (i in 1:length(Hubs)){\n  tryCatch({\n    genReport(Hub = names(Hubs[i]), code.hub = Hubs[i], Overwrite = TRUE)\n  }, error = function(e) {cat(\"ERROR :\", conditionMessage(e), \"\\n\")})\n}\n",
+    "created" : 1507877603604.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3371151421",
+    "id" : "5DE05ED2",
+    "lastKnownWriteTime" : 1507878678,
+    "last_content_update" : 1507878678183,
+    "path" : "O:/Github/CCUK-GenRep1/R/excute.R",
+    "project_path" : "R/excute.R",
+    "properties" : {
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

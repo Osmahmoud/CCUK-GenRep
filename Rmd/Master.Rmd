@@ -1,0 +1,113 @@
+---
+title: "\\fontsize{40}{250}\\selectfont Cleft Care UK"
+fontsize: 12pt
+graphics: yes
+output:
+  pdf_document:
+    fig_caption: yes
+    fig_height: 4
+    fig_width: 5
+    highlight: zenburn
+    keep_tex: no
+    number_sections: yes
+subtitle: |
+  | \LARGE{An Individual Report for `r if(codedHub.Name == "CAM"){paste0("Cleft Net East")}` `r if(codedHub.Name == "LEEDS"){paste0("Leeds")}` `r if(codedHub.Name == "LIV"){paste0("Liverpool")}` `r if(codedHub.Name == "MAN"){paste0("Manchester")}` `r if(codedHub.Name == "MIDS"){paste0("West Midlands")}` `r if(codedHub.Name == "N.IRE"){paste0("Northern Ireland")}` `r if(codedHub.Name == "N.THAMES"){paste0("North Thames")}` `r if(codedHub.Name == "NEWC"){paste0("Newcastle")}` `r if(codedHub.Name == "S.THAMES"){paste0("South Thames")}` `r if(codedHub.Name == "SCOT"){paste0("Scotland")}` `r if(codedHub.Name == "SPIRES"){paste0("Spires")}` `r if(codedHub.Name == "SWSW"){paste0("South Wales South West")}` `r if(codedHub.Name == "TRENT"){paste0("Trent")}`}
+bibliography: CCUK.bib
+header-includes:
+- \usepackage{fix-cm}
+- \usepackage{booktabs,tabularx}
+- \usepackage{threeparttable}
+- \usepackage{graphicx}
+- \usepackage{xcolor}
+- \usepackage{hyperref}
+- \usepackage{docmute}
+- \usepackage{amsmath}
+- \usepackage{rotating}
+- \usepackage{multirow}
+- \setlength{\abovecaptionskip}{-35pt plus 1pt minus 1pt}
+- \usepackage{caption}
+- \captionsetup[figure]{labelformat=empty}
+- \captionsetup[table]{labelformat=empty}
+- \captionsetup[table]{skip=10pt}
+- \setlength\parindent{0pt}
+---
+
+```{r SetUp, echo=FALSE}
+#opts_knit$set(root.dir = 'O:/Github/CCUK_Vnew/inst/rmd')
+opts_chunk$set(echo=FALSE, fig.align='center', fig.pos='!h', fig.width=6, fig.path=paste("../Outputs/Fig.Gen/", sep = ""))
+```
+
+```{r child = 'frontpage.Rmd'}
+```
+
+```{r child = 'Introduction.Rmd'}
+```
+
+```{r, LoadData}
+load("../data/CCUK.RData")
+load("../data/SuppObj.RData")
+```
+
+\clearpage
+
+# RESULTS
+
+## Dento-alveolor relationship
+
+```{r child = 'Sections/Dento-alveolor.Rmd'}
+```
+
+\clearpage
+
+## Facial Appearance
+
+```{r child = 'Sections/Facial.Rmd'}
+```
+
+\clearpage
+
+## Oral Health
+
+```{r child = 'Sections/Oral.Rmd'}
+```
+
+\clearpage
+
+## Audiology
+
+```{r child = 'Sections/Audiology.Rmd'}
+```
+
+\clearpage
+
+
+## Speech
+
+```{r child = 'Sections/Speech.Rmd'}
+```
+
+\clearpage
+
+## Well-being
+
+```{r child = 'Sections/Wellbeing.Rmd'}
+```
+
+\clearpage
+
+# SUMMARY
+
+```{r child = 'Summary.Rmd'}
+```
+
+\clearpage
+
+# APPENDIX: The Statistical Approach
+
+```{r child = 'Appendix.Rmd'}
+```
+
+\clearpage
+
+\renewcommand{\addcontentsline}[3]{}
+# 7 REFERENCES

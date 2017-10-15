@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "---\ntitle: \"\\\\fontsize{40}{250}\\\\selectfont Cleft Care UK\"\nfontsize: 12pt\ngraphics: yes\noutput:\n  pdf_document:\n    fig_caption: yes\n    fig_height: 4\n    fig_width: 5\n    highlight: zenburn\n    keep_tex: no\n    number_sections: yes\nsubtitle: |\n  | \\LARGE{An Individual Report for `r if(codedHub.Name == \"CAM\"){paste0(\"Cleft Net East\")}` `r if(codedHub.Name == \"LEEDS\"){paste0(\"Leeds\")}` `r if(codedHub.Name == \"LIV\"){paste0(\"Liverpool\")}` `r if(codedHub.Name == \"MAN\"){paste0(\"Manchester\")}` `r if(codedHub.Name == \"MIDS\"){paste0(\"West Midlands\")}` `r if(codedHub.Name == \"N.IRE\"){paste0(\"Northern Ireland\")}` `r if(codedHub.Name == \"N.THAMES\"){paste0(\"North Thames\")}` `r if(codedHub.Name == \"NEWC\"){paste0(\"Newcastle\")}` `r if(codedHub.Name == \"S.THAMES\"){paste0(\"South Thames\")}` `r if(codedHub.Name == \"SCOT\"){paste0(\"Scotland\")}` `r if(codedHub.Name == \"SPIRES\"){paste0(\"Spires\")}` `r if(codedHub.Name == \"SWSW\"){paste0(\"South Wales South West\")}` `r if(codedHub.Name == \"TRENT\"){paste0(\"Trent\")}`}\nbibliography: CCUK.bib\nheader-includes:\n- \\usepackage{fix-cm}\n- \\usepackage{booktabs,tabularx}\n- \\usepackage{threeparttable}\n- \\usepackage{graphicx}\n- \\usepackage{xcolor}\n- \\usepackage{hyperref}\n- \\usepackage{docmute}\n- \\usepackage{amsmath}\n- \\usepackage{rotating}\n- \\usepackage{multirow}\n- \\setlength{\\abovecaptionskip}{-35pt plus 1pt minus 1pt}\n- \\usepackage{caption}\n- \\captionsetup[figure]{labelformat=empty}\n- \\captionsetup[table]{labelformat=empty}\n- \\captionsetup[table]{skip=10pt}\n- \\setlength\\parindent{0pt}\n---\n\n```{r SetUp, echo=FALSE}\n#opts_knit$set(root.dir = 'O:/Github/CCUK_Vnew/inst/rmd')\nopts_chunk$set(echo=FALSE, fig.align='center', fig.pos='!h', fig.width=6, fig.path=paste(\"../Outputs/Fig.Gen/\", sep = \"\"))\n```\n\n```{r child = 'frontpage.Rmd'}\n```\n\n```{r child = 'Introduction.Rmd'}\n```\n\n```{r, LoadData}\nload(\"../data/CCUK.RData\")\nload(\"../data/SuppObj.RData\")\n```\n\n\\clearpage\n\n# RESULTS\n\n## Dento-alveolor relationship\n\n```{r child = 'Sections/Dento-alveolor.Rmd'}\n```\n\n\\clearpage\n\n## Facial Appearance\n\n```{r child = 'Sections/Facial.Rmd'}\n```\n\n\\clearpage\n\n## Oral Health\n\n```{r child = 'Sections/Oral.Rmd'}\n```\n\n\\clearpage\n\n## Audiology\n\n```{r child = 'Sections/Audiology.Rmd'}\n```\n\n\\clearpage\n\n\n## Speech\n\n```{r child = 'Sections/Speech.Rmd'}\n```\n\n\\clearpage\n\n## Well-being\n\n```{r child = 'Sections/Wellbeing.Rmd'}\n```\n\n\\clearpage\n\n# SUMMARY\n\n```{r child = 'Summary.Rmd'}\n```\n\n\\clearpage\n\n# APPENDIX: The Statistical Approach\n\n```{r child = 'Appendix.Rmd'}\n```\n\n\\clearpage\n\n\\renewcommand{\\addcontentsline}[3]{}\n# 7 REFERENCES",
+    "created" : 1507877592681.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1960385024",
+    "id" : "52C0598F",
+    "lastKnownWriteTime" : 1507878127,
+    "last_content_update" : 1507878126658,
+    "path" : "O:/Github/CCUK-GenRep1/Rmd/Master.Rmd",
+    "project_path" : "Rmd/Master.Rmd",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
